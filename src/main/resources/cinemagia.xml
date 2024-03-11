@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinemagia>
+    <filme>
+        <film>
+            <titlu>Titanic</titlu>
+            <gen>drama</gen>
+            <an>1997</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Leonardo DiCaprio</actorPrincipal>
+            <platforma>Amazon Prime</platforma>
+            <familie>da</familie>
+            <popular>da</popular>
+            <nota>10</nota>
+        </film>
+        <film>
+            <titlu>Inception</titlu>
+            <gen>thriller</gen>
+            <an>2010</an>
+            <premiu>nu</premiu>
+            <actorPrincipal>Leonardo DiCaprio</actorPrincipal>
+            <platforma>HBO</platforma>
+            <familie>da</familie>
+            <popular>nu</popular>
+            <nota>8</nota>
+        </film>
+        <film>
+            <titlu>Pulp Fiction</titlu>
+            <gen>comedie</gen>
+            <an>1994</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Ving Rhames</actorPrincipal>
+            <platforma>Amazon Prime</platforma>
+            <familie>da</familie>
+            <popular>nu</popular>
+            <nota>7</nota>
+        </film>
+        <film>
+            <titlu>Interstellar</titlu>
+            <gen>drama</gen>
+            <an>2014</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Wes Bentley</actorPrincipal>
+            <platforma>Amazon Prime</platforma>
+            <familie>nu</familie>
+            <popular>da</popular>
+            <nota>10</nota>
+        </film>
+        <film>
+            <titlu>Jurassic Park</titlu>
+            <gen>aventura</gen>
+            <an>1993</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Sam Neill</actorPrincipal>
+            <platforma>HBO</platforma>
+            <familie>nu</familie>
+            <popular>da</popular>
+            <nota>8</nota>
+        </film>
+        <film>
+            <titlu>The Godfather</titlu>
+            <gen>crima</gen>
+            <an>1972</an>
+            <premiu>nu</premiu>
+            <actorPrincipal>Marlon Brando</actorPrincipal>
+            <platforma>Netflix</platforma>
+            <familie>nu</familie>
+            <popular>nu</popular>
+            <nota>7</nota>
+        </film>
+        <film>
+            <titlu>The Lord of the Rings:The Return of the King</titlu>
+            <gen>aventura</gen>
+            <an>2003</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Ian McKellen</actorPrincipal>
+            <platforma>HBO</platforma>
+            <familie>da</familie>
+            <popular>nu</popular>
+            <nota>6</nota>
+        </film>
+        <film>
+            <titlu>The Hangover</titlu>
+            <gen>comedie</gen>
+            <an>2009</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Bradley Cooper</actorPrincipal>
+            <platforma>Netflix</platforma>
+            <familie>da</familie>
+            <popular>da</popular>
+            <nota>7</nota>
+        </film>
+        <film>
+            <titlu>Avatar</titlu>
+            <gen>aventura</gen>
+            <an>2009</an>
+            <premiu>da</premiu>
+            <actorPrincipal>Zoe Saldana</actorPrincipal>
+            <platforma>HBO</platforma>
+            <familie>nu</familie>
+            <popular>nu</popular>
+            <nota>9</nota>
+        </film>
+        <film>
+            <titlu>Harry Potter and the Sorcerers Stone</titlu>
+            <gen>aventura</gen>
+            <an>2001</an>
+            <premiu>nu</premiu>
+            <actorPrincipal>Daniel Radcliffe</actorPrincipal>
+            <platforma>HBO</platforma>
+            <familie>da</familie>
+            <popular>da</popular>
+            <nota>10</nota>
+        </film>
+        <film>
+            <titlu>The War of the Roses</titlu>
+            <gen>drama</gen>
+            <an>1989</an>
+            <premiu>nu</premiu>
+            <actorPrincipal>Michael Douglas</actorPrincipal>
+            <platforma>Netflix</platforma>
+            <familie>da</familie>
+            <popular>da</popular>
+            <nota>8</nota>
+        </film>
+    </filme>
+
+    <reguli>
+        <regula>
+            <if>
+                <clauza>
+                    <val>drama</val>
+                    <rel>egal</rel>
+                    <what>gen</what>
+                </clauza>
+                <clauza>
+                    <val>9</val>
+                    <rel>mic</rel>
+                    <what>nota</what>
+                </clauza>
+            </if>
+            <then>
+                <val>Nu mai este film de familie</val>
+                <what>familie</what>
+            </then>
+        </regula>
+        <regula>
+            <if>
+                <clauza>
+                    <val>2000</val>
+                    <rel>mic</rel>
+                    <what>an</what>
+                </clauza>
+                <clauza>
+                    <val>nu</val>
+                    <rel>egal</rel>
+                    <what>premiu</what>
+                </clauza>
+            </if>
+            <then>
+                <val>A fost scos de pe platforma</val>
+                <what>platforma</what>
+            </then>
+        </regula>
+        <regula>
+            <if>
+                <clauza>
+                    <val>A fost scos de pe platforma</val>
+                    <rel>egal</rel>
+                    <what>platforma</what>
+                </clauza>
+                <clauza>
+                    <val>nu</val>
+                    <rel>egal</rel>
+                    <what>popular</what>
+                </clauza>
+            </if>
+            <then>
+                <val>4</val>
+                <what>nota</what>
+            </then>
+        </regula>
+        <regula>
+            <if>
+                <clauza>
+                    <val>5</val>
+                    <rel>mic</rel>
+                    <what>nota</what>
+                </clauza>
+                <clauza>
+                    <val>nu</val>
+                    <rel>egal</rel>
+                    <what>familie</what>
+                </clauza>
+            </if>
+            <then>
+                <val>Nu mai este popular</val>
+                <what>popular</what>
+            </then>
+        </regula>
+    </reguli>
+</cinemagia>
